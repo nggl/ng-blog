@@ -1,0 +1,19 @@
+
+<form class="pool" bindsubmit="postForm">
+	<view class="tt">
+		<label>主题</label>
+		<textarea placeholder="主题..." name="title" value="{{info.title}}" show-confirm-bar="{{false}}"></textarea>
+	</view>
+	<view class="desc">
+		<label>说明</label>
+		<textarea placeholder="发布的主题说明..." name="desc" value="{{info.desc}}" show-confirm-bar="{{false}}"></textarea>
+	</view>
+	<view class="ct">
+		<label>主要内容</label>
+		<textarea placeholder="主要内容..." name="content" value="{{info.content}}" show-confirm-bar="{{false}}"></textarea>
+	</view>
+	<view class="btn">
+		<button size="mini" plain form-type="reset">重置</button>
+		<button size="mini" type="primary" disabled="{{isCanPublish}}" plain form-type="submit">保存</button>
+	</view>
+</form>

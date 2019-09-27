@@ -8,7 +8,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    imgUrls: ['https://source.ngfrankgl.cn/imgs/swiper-wx/01.jpg', 'https://source.ngfrankgl.cn/imgs/swiper-wx/02.jpg', 'https://source.ngfrankgl.cn/imgs/swiper-wx/03.jpg'],
   },
 
   /**

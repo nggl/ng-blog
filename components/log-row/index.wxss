@@ -1,0 +1,34 @@
+@import "../../app.wxss";
+.author-info {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.author-info image {
+	width: 90rpx;
+	height: 90rpx;
+	border-radius: 50%;
+}
+.author-info view {
+	margin-left: 12rpx;
+	font-size: 32rpx;
+	color: #333;
+	flex: 1;
+}
+.author-info text {
+	color: #666;
+	font-size: 28rpx;
+}
+.prod-tt text,
+.prod-ct text {
+	color: #faabaf;
+}
+.prod-tt {
+	font-size: 32rpx;
+	color: #333;
+	padding: 8rpx 0;
+}
+.prod-ct {
+	font-size: 24rpx;
+	color: #666;
+}

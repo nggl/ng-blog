@@ -1,4 +1,7 @@
 {
-  "usingComponents": {},
-  "navigationBarTitleText": "首页"
+  "usingComponents": {
+  	"single-row": "/components/single-row/index"
+  	},
+  "navigationBarTitleText": "首页",
+  "enablePullDownRefresh": true
 }

@@ -1,0 +1,38 @@
+@import "../../app.wxss";
+.row {
+	display: flex;
+	padding: 16rpx 20rpx;
+	align-items: center;
+	/* border-top: 2rpx solid #f5f5f5; */
+	border-bottom: 2rpx solid #f5f5f5;
+}
+.row-ct {
+	flex: 1;
+	margin-left: 20rpx;
+	display: flex;
+	flex-direction: column;
+}
+.row-ct-tt {
+	font-size: 28rpx;
+	color: #333;
+	width: 570rpx;
+}
+.row-ct-ct {
+	font-size: 24rpx;
+	color: #666;
+	width: 570rpx;
+}
+.row-ct-ft {
+	display: flex;
+	justify-content: space-between;
+	font-size: 20rpx;
+	color: #666;
+}
+.row-ct-ft-seen text {
+	color: #3399ea;
+}
+.row image {
+	width: 120rpx;
+	height: 120rpx;
+	border-radius: 50%;
+}

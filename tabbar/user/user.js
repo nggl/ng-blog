@@ -4,7 +4,6 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
@@ -43,12 +42,33 @@ Page({
       })
     }
   },
-  getUserInfo: function(e) {
-    console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
-    this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
-    })
+  getUserInfo({detail}) {
+    console.log(detail)
+    if(detail.errMsg === 'getUserInfo:fial auth deny') {
+      app.globalData.userInfo = null
+      this.setData({
+        userInfo: null,
+        hasUserInfo: true
+      })
+    } else {
+      app.globalData.userInfo = detail.userInfo
+      this.setData({
+        userInfo: detail.userInfo,
+        hasUserInfo: true
+      })
+    }
+  },
+  jumpEvent({target}) {
+    let {tag} = target.dataset
+    if(app.globalData.userInfo) {
+      let url = `/pages/user/${tag}/index?q=${'openid'}`
+      wx.navigateTo({url})
+    } else {
+      wx.showToast({
+        title: '请先点击`登录`',
+        icon: 'none',
+        duration: 1000,
+      })
+    }
   }
 })

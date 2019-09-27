@@ -1,0 +1,8 @@
+<form bindsubmit="formSubmit">
+	<label>提交意见</label>
+	<textarea name="msg" auto-focus placeholder="输入您宝贵的意见..." show-confirm-bar="{{false}}"></textarea>
+	<view class="btn">
+		<button size="mini" form-type="reset">重置</button>
+		<button type="primary" size="mini" form-type="submit">提交</button>
+	</view>
+</form>

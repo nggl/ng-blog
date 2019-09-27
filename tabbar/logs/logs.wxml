@@ -1,2 +1,3 @@
-<!--tabbar/logs/logs.wxml-->
-<text>tabbar/logs/logs.wxml</text>
+<navigator url="/pages/logs/detail?={{item.id}}" class="row" wx:for="{{list}}" wx:key="{{index}}" >
+	<log-row info="{{item}}"></log-row>
+</navigator>

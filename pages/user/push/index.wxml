@@ -1,0 +1,36 @@
+<view class="nav" bindtap="navChangeEvent">
+	<view data-tag="1" class="{{tag === '1' ? 'active' : ''}}" hover-class="view-hover">待发布</view>
+	<view data-tag="2" class="{{tag === '2' ? 'active' : ''}}" hover-class="view-hover">已发布</view>
+</view>
+<template name="base">
+	<view class="base-tt">{{title}}</view>
+	<text class="base-date">{{date}}</text>
+	<text class="base-ds word-online">{{desc}}</text>
+	<text class="base-ct word-online">{{content}}</text>
+</template>
+<view class="row" wx:if="{{tag === '1'}}">
+	<view class="row-push" wx:for="{{list}}" wx:key="{{index}}">
+		<navigator class="base" url="/pages/home/detail?q={{item.id}}">
+			<template is="base" data="{{...item}}"/>
+		</navigator>
+		<view class="btn">
+			<navigator url="/pages/share/publish/index?q={{item.id}}">
+				修改
+			</navigator>
+			<button type="primary" plain size="mini" bindtap="publishEvent" data-id="{{item.id}}">发布</button>
+		</view>
+	</view>
+</view>
+<view class="row" wx:else>
+	<view class="row-pop" wx:for="{{list}}" wx:key="{{index}}">
+		<navigator class="base" url="/pages/home/detail?q={{item.id}}">
+			<template is="base" data="{{...item}}"/>
+		</navigator>
+		<view class="btn">
+			<navigator url="/pages/share/publish/index?q={{item.id}}">
+				修改
+			</navigator>
+			<button type="danger" plain size="mini" bindtap="cancelEvent" data-id="{{item.id}}">撤下</button>
+		</view>
+	</view>
+</view>

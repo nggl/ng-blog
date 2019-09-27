@@ -3,17 +3,25 @@
     "tabbar/home/index",
     "tabbar/logs/logs",
     "tabbar/share/share",
-    "tabbar/user/user"
+    "tabbar/user/user",
+    "pages/home/detail",
+    "pages/logs/detail",
+    "pages/share/publish/index",
+    "pages/user/feedback/index",
+    "pages/user/push/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "ng博客",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "light"
   },
   "tabBar": {
     "color": "#333",
     "selectedColor": "#f77a92",
+    "backgroundColor": "#fff",
     "list": [{
       "pagePath": "tabbar/home/index",
       "text": "首页",

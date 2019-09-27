@@ -1,0 +1,11 @@
+<view class="row">
+	<image src="https://source.ngfrankgl.cn/imgs/1.jpg" mode="aspectFill"></image>
+	<view class="row-ct">
+		<text class="row-ct-tt word-online">这是我要发布的标题</text>
+		<text class="row-ct-ct word-online">这是一段简要的内容描述，带有显示隐藏效果这是一段简要的内容描述，带有显示隐藏效果这是一段简要的内容描述，带有显示隐藏效果</text>
+		<view class="row-ct-ft">
+			<text class="row-ct-ft-date">2018-12-12</text>
+			<view class="row-ct-ft-seen">查看人数: <text>{{1221}}</text></view>
+		</view>
+	</view>
+</view>

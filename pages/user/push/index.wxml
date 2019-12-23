@@ -9,7 +9,7 @@
 	<text class="base-ct word-online">{{content}}</text>
 </template>
 <view class="row" wx:if="{{tag === '1'}}">
-	<view class="row-push" wx:for="{{list}}" wx:key="{{index}}">
+	<view class="row-push" wx:for="{{list}}" wx:key="index">
 		<navigator class="base" url="/pages/home/detail?q={{item.id}}">
 			<template is="base" data="{{...item}}"/>
 		</navigator>
@@ -22,7 +22,7 @@
 	</view>
 </view>
 <view class="row" wx:else>
-	<view class="row-pop" wx:for="{{list}}" wx:key="{{index}}">
+	<view class="row-pop" wx:for="{{list}}" wx:key="index">
 		<navigator class="base" url="/pages/home/detail?q={{item.id}}">
 			<template is="base" data="{{...item}}"/>
 		</navigator>

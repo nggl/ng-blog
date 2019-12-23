@@ -7,7 +7,7 @@
 	<view class="prod">
 		<navigator class="prod-row"
 		wx:for="{{info.prod}}" 
-		wx:key="{{index}}"
+		wx:key="index"
 		url="/pages/home/detial?q={{item.id}}">
 		<view class="prod-tt">{{item.tt}}</view>
 		<view class="prod-desc">{{item.desc}}</view>

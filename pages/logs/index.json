@@ -1,0 +1,6 @@
+{
+	"navigationBarTitleText": "文章记录",
+  "usingComponents": {
+  	"log-row": "/components/log-row/index"
+  }
+}

@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view>
+	<swiper indicator-dots autoplay indicator-color="rgba(210, 210, 210, .3)" indicator-active-color="#ddd" circular
+	interval="{{3000}}" duration="{{1000}}">
+	  <block wx:for="{{imgUrls}}" wx:key="index">
+	    <swiper-item>
+	      <navigator url="/pages/detail/index?q={{item.id}}">
+	      	<image src="{{item.link}}" mode="aspectFill"/>
+	      </navigator>
+	    </swiper-item>
+	  </block>
+	</swiper>
+	<navigator url="/pages/detail/index?q={{item}}" wx:for="{{[1, 3, 4 ,5 ,6 ,7, 5]}}" wx:key="index">
+		<single-row></single-row>
+	</navigator>
+</view>

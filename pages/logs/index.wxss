@@ -1,0 +1,4 @@
+.row {
+	padding: 12rpx 20rpx;
+	border-bottom: 2rpx solid #ccc;
+}

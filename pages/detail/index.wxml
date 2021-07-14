@@ -1,0 +1,15 @@
+<view class="pool">
+	<view class="tt">我是正标题，指明内容</view>
+	<view class="stt">我是一段说明文字</view>
+	<view class="mtt">
+		<text class="mtt-date">2018-12-12</text>
+		<text class="mtt-seen">已浏览人数: <text>{{1234}}</text></text>
+	</view>
+	<view class="ct">
+		<rich-text nodes="{{html}}"></rich-text>
+	</view>
+	<view class="author">
+		<image src="/static/assets/images/avatar.png" mode="aspectFill"></image>
+		<text>章三</text>
+	</view>
+</view>

@@ -1,0 +1,43 @@
+.model {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.model .navigator {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	width: 160rpx;
+	height: 160rpx;
+	margin: 12rpx 0;
+}
+.model image {
+	width: 120rpx;
+	height: 120rpx;
+	border-radius: 12rpx;
+}
+.model text {
+	color: #333;
+	font-size: 28rpx;
+}
+.tip {
+	padding: 0 20rpx;
+	border-top: 2rpx solid #e50915;
+}
+.tip .first-tt {
+	font-size: 32rpx;
+	font-weight: 900;
+	color: #333;
+	margin-top: 20rpx;
+}
+.tip .second-tt {
+	font-size: 28rpx;
+	color: #444;
+	padding: 8rpx 0;
+}
+.tip .third-tt {
+	font-size: 24rpx;
+	color: #555;
+	line-height: 32rpx;
+}

@@ -1,0 +1,4 @@
+<navigator url="/pages/logs/detail/index?={{item.id}}" class="row" 
+wx:for="{{list}}" wx:key="index" >
+	<log-row info="{{item}}"></log-row>
+</navigator>

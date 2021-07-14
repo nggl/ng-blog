@@ -1,0 +1,21 @@
+<!--pages/share/theme/index.wxml-->
+<view class="container">
+	<textarea placeholder="主题..." bindblur="onInputConfirm" show-confirm-bar="{{false}}" />
+</view>
+
+<view class="footer">
+	<button disabled="{{isNotNext}}" bindtap="onNextEvent" type="primary">下一步</button>
+</view>
+
+<view class="tip" wx:if="{{tip.count}}">
+	<text class="tip-text">有{{tip.count}}人编写了和你类似主题的文章</text>
+	<view wx:if="{{tip.list.length}}">
+		<view class="row" wx:for="{{tip.list}}" wx:key="{{item.id}}">
+			<navigator url="/pages/detail/index?q={{item.id}}" class="row-title">{{item.name}}</navigator>
+			<view class="row-info">
+				<text>{{item.author}}</text>
+				<text>{{item.updateDate}}</text>
+			</view>
+		</view>
+	</view>
+</view>

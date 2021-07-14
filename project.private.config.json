@@ -1,0 +1,36 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "发布页面",
+          "pathName": "pages/share/publish/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "文章",
+          "pathName": "pages/share/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "添加主题",
+          "pathName": "pages/share/theme/index",
+          "query": "tid=1",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button class="original-button" wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">登录</button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="power" bindtap="jumpEvent">
+    <view class="power-publish" hover-class="view-hover" data-tag="push">
+      我的发布
+    </view>
+    <view class="power-feedback" hover-class="view-hover" data-tag="feedback">
+      意见反馈
+    </view>
+  </view>
+</view>

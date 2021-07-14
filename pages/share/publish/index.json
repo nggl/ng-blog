@@ -1,4 +1,6 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+  	"rich-editor": "/editor/editor"
+  },
   "navigationBarTitleText": "发布"
 }

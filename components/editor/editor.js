@@ -10,7 +10,7 @@ Component({
     onLoad() {
       wx.loadFontFace({
         family: 'Pacifico',
-        source: 'url("https://sungd.github.io/Pacifico.ttf")',
+        source: 'url("./font/Pacifico.ttf")',
         success: console.log
       })
     },

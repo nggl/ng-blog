@@ -1,17 +1,18 @@
 {
   "pages": [
-    "tabbar/home/index",
-    "tabbar/logs/logs",
-    "tabbar/share/share",
-    "tabbar/user/user",
-    "pages/home/detail",
-    "pages/logs/detail",
+    "pages/home/index",
+    "pages/logs/index",
+    "pages/share/index",
+    "pages/user/index",
+    "pages/detail/index",
+    "pages/logs/detail/index",
     "pages/share/publish/index",
     "pages/user/feedback/index",
-    "pages/user/push/index"
+    "pages/user/push/index",
+    "pages/share/theme/index",
+    "editor/editor"
   ],
   "window": {
-    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "ng博客",
     "navigationBarTextStyle": "black",
@@ -22,27 +23,32 @@
     "color": "#333",
     "selectedColor": "#f77a92",
     "backgroundColor": "#fff",
-    "list": [{
-      "pagePath": "tabbar/home/index",
-      "text": "首页",
-      "iconPath": "static/assets/tabbar/icon-home.png",
-      "selectedIconPath": "static/assets/tabbar/icon-home-active.png"
-    }, {
-      "pagePath": "tabbar/logs/logs",
-      "text": "记录",
-      "iconPath": "static/assets/tabbar/icon-info.png",
-      "selectedIconPath": "static/assets/tabbar/icon-info-active.png"
-    }, {
-      "pagePath": "tabbar/share/share",
-      "text": "发布",
-      "iconPath": "static/assets/tabbar/icon-prod.png",
-      "selectedIconPath": "static/assets/tabbar/icon-prod-active.png"
-    }, {
-      "pagePath": "tabbar/user/user",
-      "text": "我的",
-      "iconPath": "static/assets/tabbar/icon-me.png",
-      "selectedIconPath": "static/assets/tabbar/icon-me-active.png"
-    }]
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页",
+        "iconPath": "static/assets/tabbar/icon-home.png",
+        "selectedIconPath": "static/assets/tabbar/icon-home-active.png"
+      },
+      {
+        "pagePath": "pages/logs/index",
+        "text": "记录",
+        "iconPath": "static/assets/tabbar/icon-info.png",
+        "selectedIconPath": "static/assets/tabbar/icon-info-active.png"
+      },
+      {
+        "pagePath": "pages/share/index",
+        "text": "发布",
+        "iconPath": "static/assets/tabbar/icon-prod.png",
+        "selectedIconPath": "static/assets/tabbar/icon-prod-active.png"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "text": "我的",
+        "iconPath": "static/assets/tabbar/icon-me.png",
+        "selectedIconPath": "static/assets/tabbar/icon-me-active.png"
+      }
+    ]
   },
   "sitemapLocation": "sitemap.json"
 }

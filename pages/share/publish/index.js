@@ -90,4 +90,7 @@ Page({
       // })
     }
   },
+  onValueChange({formats}) {
+    console.log(formats)
+  }
 })

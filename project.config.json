@@ -1,112 +1,69 @@
 {
-	"description": "项目配置文件",
-	"packOptions": {
-		"ignore": []
-	},
-	"setting": {
-		"urlCheck": false,
-		"es6": true,
-		"postcss": true,
-		"minified": true,
-		"newFeature": true,
-		"nodeModules": true,
-		"autoAudits": false,
-		"coverView": true
-	},
-	"compileType": "miniprogram",
-	"libVersion": "2.8.3",
-	"appid": "wx65670f9c361d0227",
-	"projectname": "ng%E5%8D%9A%E5%AE%A2",
-	"debugOptions": {
-		"hidedInDevtools": []
-	},
-	"isGameTourist": false,
-	"simulatorType": "wechat",
-	"simulatorPluginLibVersion": {},
-	"condition": {
-		"search": {
-			"current": -1,
-			"list": []
-		},
-		"conversation": {
-			"current": -1,
-			"list": []
-		},
-		"plugin": {
-			"current": -1,
-			"list": []
-		},
-		"game": {
-			"currentL": -1,
-			"list": []
-		},
-		"miniprogram": {
-			"current": 5,
-			"list": [
-				{
-					"id": -1,
-					"name": "tabbar/user/user",
-					"pathName": "tabbar/user/user",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/home/detail",
-					"pathName": "pages/home/detail",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": 2,
-					"name": "tabbar/logs/logs",
-					"pathName": "tabbar/logs/logs",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/logs/detail",
-					"pathName": "pages/logs/detail",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "tabbar/share/share",
-					"pathName": "tabbar/share/share",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": 5,
-					"name": "pages/share/publish/index",
-					"pathName": "pages/share/publish/index",
-					"query": "q=3",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "tabbar/user/user",
-					"pathName": "tabbar/user/user",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/user/feedback/index",
-					"pathName": "pages/user/feedback/index",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/user/push/index",
-					"pathName": "pages/user/push/index",
-					"query": "",
-					"scene": null
-				}
-			]
-		}
-	}
+  "description": "项目配置文件",
+  "packOptions": {
+    "ignore": []
+  },
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": true,
+    "coverView": true,
+    "nodeModules": true,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "useMultiFrameRuntime": true,
+    "useApiHook": true,
+    "useApiHostProcess": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "enableEngineNative": false,
+    "useIsolateContext": false,
+    "useCompilerModule": true,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "userConfirmedBundleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true
+  },
+  "compileType": "miniprogram",
+  "libVersion": "2.8.3",
+  "appid": "wx65670f9c361d0227",
+  "projectname": "ng%E5%8D%9A%E5%AE%A2",
+  "debugOptions": {
+    "hidedInDevtools": []
+  },
+  "isGameTourist": false,
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "condition": {
+    "search": {
+      "list": []
+    },
+    "conversation": {
+      "list": []
+    },
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "currentL": -1,
+      "list": []
+    },
+    "miniprogram": {
+      "list": []
+    }
+  }
 }

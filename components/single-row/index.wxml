@@ -1,5 +1,5 @@
 <view class="row">
-	<image src="https://source.ngfrankgl.cn/imgs/1.jpg" mode="aspectFill"></image>
+	<image src="/static/assets/images/avatar.png" mode="aspectFill"></image>
 	<view class="row-ct">
 		<text class="row-ct-tt word-online">这是我要发布的标题</text>
 		<text class="row-ct-ct word-online">这是一段简要的内容描述，带有显示隐藏效果这是一段简要的内容描述，带有显示隐藏效果这是一段简要的内容描述，带有显示隐藏效果</text>

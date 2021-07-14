@@ -1,6 +1,0 @@
-/**index.wxss**/
-swiper,
-swiper-item image {
-	width: 750rpx;
-	height: 480rpx;
-}

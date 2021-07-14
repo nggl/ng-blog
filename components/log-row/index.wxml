@@ -4,11 +4,12 @@
 	<text>{{info.date}}</text>
 </view>
 <view class="prod">
-	<view class="prod-tt">
-		<text>标题：</text>{{info.title}}
+	<view class="prod-tt word-online">
+		<!-- <text>标题：</text> -->
+		{{info.title}}
 	</view>
-	<view class="prod-ct">
-		<text>说明：</text>
+	<view class="prod-ct word-online">
+		<!-- <text>说明：</text> -->
 		{{info.desc}}
 	</view>
 </view>
